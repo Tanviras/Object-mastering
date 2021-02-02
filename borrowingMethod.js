@@ -19,8 +19,23 @@ const heroPerson={
 }
 
 //heroPerson doesn't have chargeBill
-//So,we have to borrow the chargeBill from normalPerson by using "bind"
+//So,we have to borrow the chargeBill from normalPerson
 
-const hpChargeBill = normalPerson.chargeBill.bind(heroPerson)//bind results dey function hishebe. So hpChargeBill is a function. 
-//normalPerson er jonno "chargeBill" jerokom function, heroPerson er jonno "hpChargeBill" temoni function.
-console.log(hpChargeBill(150)); 
+
+
+// // Way-1-use of bind
+// const hpChargeBill = normalPerson.chargeBill.bind(heroPerson)//bind results dey function hishebe. So hpChargeBill is a function. 
+// //normalPerson er jonno "chargeBill" jerokom function, heroPerson er jonno "hpChargeBill" temoni function.
+// console.log(hpChargeBill(150)); 
+
+
+// //Way-2-use of call
+// const hpChargeBill= normalPerson.chargeBill.call(heroPerson,160);//hpChargeBill is just a normal varaible, not a function. Because unlike "bind", "call" isn't that pechailla.
+//call er "c",comma teo "c"
+// console.log(hpChargeBill);
+
+
+
+//Way-3-use of apply
+const hpChargeBill= normalPerson.chargeBill.apply(heroPerson,[200]); //apply er "a",array teo "a"
+console.log(hpChargeBill);
