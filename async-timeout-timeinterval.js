@@ -73,11 +73,11 @@
 
 
 //sixth view
-console.log(2222);
-setTimeout(()=>{
-               console.log(3333);
-               },10000);//10s =10000 milisecond timeout hobar por seshe tomake boshabo doSomething
-console.log(4444);
+// console.log(2222);
+// setTimeout(()=>{
+//                console.log(3333);
+//                },10000);//10s =10000 milisecond timeout hobar por seshe tomake boshabo doSomething
+// console.log(4444);
 
 //Output:
 // 2222
@@ -88,3 +88,13 @@ console.log(4444);
 
 
 //ei je 10000 milisecond=10 second bole deya hocche, eta ek dhoroner assurance je minimum 10 second lagbei. But amra jani set time out dile onno kaj sesh korar jonno jje time lage,sei kaj ta sesh korar por setTimeout er nijer kaj ta kore dey. jodi onno kaj gulo korte 15 second lege jay,tahole oi 15 second porei doseomething er values ta dekhabe(10 s toh minimum,aro beshi lagse ekkehtre). Jodi onno  kaj 5 sec a hoye jay,taholeo minimum 10 sec wait korbe. 
+
+
+
+
+//setInterval
+console.log(2222);
+const myVar= setInterval(function(){
+                     console.log(3333);
+                     },3000);//3s =3000 milisecond timeout hobar por seshe tomake boshabo doSomething
+console.log(4444);
